@@ -1,0 +1,42 @@
+body {
+    font-family: monospace;
+    font-size: 12pt;
+}
+
+.message-wrapper {
+    height: 50px;
+    width: 900px;
+    display: flex;
+    position: relative; 
+    justify-content: center;
+    align-items: end;
+    margin: auto;
+}
+
+.wrapper {
+    height: 400px;
+    width: 900px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.square1, .square2 {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    background-color: black;
+}
+
+.square1 {
+    left: calc(50% - 200px); 
+    transform: translateY(-50%, -50%); 
+}
+
+.square2 {
+    left: calc(50% + 120px); 
+    transform: translateY(-50%, -50%); 
+}
