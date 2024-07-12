@@ -22,7 +22,6 @@ function animateSquares() {
         }).finished
     ]).then(function() {
         console.log('animation done');
-        updateMessage('Animation is complete! Click anywhere to restart.');
     })
 }
 
@@ -36,18 +35,10 @@ function resetSquarePositions() {
     }
 }
 
-function updateMessage(newMessage) {
-    const messageWrapper = document.querySelector('.message-wrapper');
-    if (messageWrapper) {
-        messageWrapper.textContent = newMessage;
-    }
-}
-
 // Function to handle click event on the document
 function handleClick(event) {
     resetSquarePositions();
     animateSquares();
-    updateMessage('');
 }
 
 // Add click event listener to the document
